@@ -147,3 +147,10 @@ Developed as part of KLU Hyderabad Hackathon.
 License
 
 This project is intended for educational, research, and demonstration purposes.
+## Demo Video
+
+A complete walkthrough of the GST Reconciliation & Risk Analysis System, including API execution, reconciliation workflow, mismatch detection, and report generation.
+
+Video Link:
+https://drive.google.com/file/d/16KoqwILBasHRvj4NOE5ieuZBqwBA0JAD/view?usp=drivesdk
+
