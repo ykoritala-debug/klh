@@ -11,6 +11,7 @@ username = "neo4j"
 password = "yaminikoritala"
 driver = GraphDatabase.driver(uri, auth=(username, password))
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     print("FastAPI app started, Neo4j driver ready.")
@@ -19,6 +20,11 @@ async def lifespan(app: FastAPI):
     print("Neo4j driver closed.")
 
 app = FastAPI(lifespan=lifespan)
+@app.get("/")
+def home():
+    return {
+        "message": "GST Reconciliation API is running"
+    }
 
 # -------------------------------
 # Neo4j Mismatches endpoint
